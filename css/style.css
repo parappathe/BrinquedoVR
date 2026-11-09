@@ -1,0 +1,27 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #cfe4f2; font-family: system-ui, sans-serif; }
+#app canvas { display: block; touch-action: none; }
+#vr {
+  position: fixed; right: 18px; bottom: 18px;
+  padding: 12px 24px; font-size: 17px; font-weight: 700;
+  color: #ffffff; background: #3a78d8; border: 0; border-radius: 12px; cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+}
+#vr:disabled { background: #a8b0a0; color: #ffffff; cursor: default; }
+#hud {
+  display: none; position: fixed; left: 16px; top: 14px; max-width: min(720px, calc(100vw - 32px));
+  color: #22302a; font: 16px/1.5 system-ui, sans-serif; pointer-events: none;
+  background: rgba(246,242,228,0.9); padding: 8px 14px; border-radius: 10px; border: 1px solid #3a78d8;
+}
+#hud b { color: #2a58a8; }
+#hud em { color: #2a7a3a; font-style: normal; font-size: 15px; }
+#hint {
+  position: fixed; left: 16px; bottom: 18px; right: 300px; color: #22302a; font: 14px/1.5 system-ui, sans-serif;
+  pointer-events: none;
+}
+#hint span { display: inline-block; background: rgba(246,242,228,0.88); padding: 6px 10px; border-radius: 8px; }
+#hint:empty { display: none; }
+#fps {
+  display: none; position: fixed; right: 16px; bottom: 76px; color: #ffdf6e; font: bold 15px monospace;
+  background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 6px; pointer-events: none;
+}
+@media (max-width: 640px) { #hint { right: 16px; bottom: 120px; } }

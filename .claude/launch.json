@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "brinquedovr", "runtimeExecutable": "python", "runtimeArgs": ["serve.py", "--port", "8886"], "port": 8886 }
+  ]
+}
